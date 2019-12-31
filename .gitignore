@@ -170,3 +170,8 @@ xcuserdata/**/*
 # pull your cahnges to other's repo"
 #
 #*.xccheckout
+
+/project/x64
+/project/Debug
+/project/gumbo_query_static.dir
+/project/gumbo_query_shared.dir
