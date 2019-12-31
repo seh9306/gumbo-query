@@ -1,0 +1,5 @@
+C:/Users/Park/Desktop/dev/Crawler/gumbo-query/project/CMakeFiles/INSTALL.dir
+C:/Users/Park/Desktop/dev/Crawler/gumbo-query/project/CMakeFiles/gumbo_query_shared.dir
+C:/Users/Park/Desktop/dev/Crawler/gumbo-query/project/CMakeFiles/gumbo_query_static.dir
+C:/Users/Park/Desktop/dev/Crawler/gumbo-query/project/CMakeFiles/ALL_BUILD.dir
+C:/Users/Park/Desktop/dev/Crawler/gumbo-query/project/CMakeFiles/ZERO_CHECK.dir
