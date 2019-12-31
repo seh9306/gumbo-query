@@ -20,15 +20,15 @@
 #include <string>
 #include "Selection.h"
 
-class CDocument: public CObject
+class Document: public Object
 {
 	public:
 
-		CDocument();
+		Document();
 
 		void parse(const std::string& aInput);
 
-		virtual ~CDocument();
+		virtual ~Document();
 
 		CSelection find(std::string aSelector);
 

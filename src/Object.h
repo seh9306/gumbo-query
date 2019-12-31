@@ -16,13 +16,13 @@
 #ifndef OBJECT_H_
 #define OBJECT_H_
 
-class CObject
+class Object
 {
 	public:
 
-		CObject();
+		Object();
 
-		virtual ~CObject();
+		virtual ~Object();
 
 	public:
 

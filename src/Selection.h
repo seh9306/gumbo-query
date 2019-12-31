@@ -23,7 +23,7 @@
 
 class CNode;
 
-class CSelection: public CObject
+class CSelection: public Object
 {
 
 	public:

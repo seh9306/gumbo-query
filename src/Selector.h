@@ -21,7 +21,7 @@
 #include <vector>
 #include "Object.h"
 
-class CSelector: public CObject
+class CSelector: public Object
 {
 
 	public:

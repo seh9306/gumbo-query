@@ -15,12 +15,12 @@
 
 #include "Object.h"
 
-CObject::CObject()
+Object::Object()
 {
 	mReferences = 1;
 }
 
-CObject::~CObject()
+Object::~Object()
 {
 	if (mReferences != 1)
 	{
@@ -28,12 +28,12 @@ CObject::~CObject()
 	}
 }
 
-void CObject::retain()
+void Object::retain()
 {
 	mReferences++;
 }
 
-void CObject::release()
+void Object::release()
 {
 	if (mReferences < 0)
 	{
@@ -50,7 +50,7 @@ void CObject::release()
 	}
 }
 
-unsigned int CObject::references()
+unsigned int Object::references()
 {
 	return mReferences;
 }

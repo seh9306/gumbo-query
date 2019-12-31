@@ -15,23 +15,23 @@
 
 #include "Document.h"
 
-CDocument::CDocument()
+Document::Document()
 {
 	mpOutput = NULL;
 }
 
-void CDocument::parse(const std::string& aInput)
+void Document::parse(const std::string& aInput)
 {
 	reset();
 	mpOutput = gumbo_parse(aInput.c_str());
 }
 
-CDocument::~CDocument()
+Document::~Document()
 {
 	reset();
 }
 
-CSelection CDocument::find(std::string aSelector)
+CSelection Document::find(std::string aSelector)
 {
 	if (mpOutput == NULL)
 	{
@@ -42,7 +42,7 @@ CSelection CDocument::find(std::string aSelector)
 	return sel.find(aSelector);
 }
 
-void CDocument::reset()
+void Document::reset()
 {
 	if (mpOutput != NULL)
 	{
