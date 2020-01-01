@@ -173,5 +173,6 @@ xcuserdata/**/*
 
 /project/x64
 /project/Debug
+/project/Release
 /project/gumbo_query_static.dir
 /project/gumbo_query_shared.dir
