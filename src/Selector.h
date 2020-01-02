@@ -1,18 +1,3 @@
-/***************************************************************************
- * 
- * $Id$
- * 
- **************************************************************************/
-
-/**
- * @file $HeadURL$
- * @author $Author$(hoping@baimashi.com)
- * @date $Date$
- * @version $Revision$
- * @brief 
- *  
- **/
-
 #ifndef SELECTOR_H_
 #define SELECTOR_H_
 
@@ -27,15 +12,10 @@ class CSelector: public Object
 	public:
 		typedef enum
 		{
-			//
 			EDummy,
-			//
 			EEmpty,
-			//
 			EOnlyChild,
-			//
 			ENthChild,
-			//
 			ETag,
 		} TOperator;
 	public:
@@ -115,11 +95,8 @@ class CUnarySelector: public CSelector
 	public:
 		typedef enum
 		{
-			//
 			ENot,
-			//
 			EHasDescendant,
-			//
 			EHasChild,
 		} TOperator;
 
@@ -151,15 +128,10 @@ class CBinarySelector: public CSelector
 	public:
 		typedef enum
 		{
-			// || 操作符
 			EUnion,
-			// && 操作符
 			EIntersection,
-			//
 			EChild,
-			//
 			EDescendant,
-			//
 			EAdjacent,
 		} TOperator;
 
@@ -191,33 +163,12 @@ class CAttributeSelector: public CSelector
 	public:
 		typedef enum
 		{
-			/**
-			 * 是否存在
-			 */
 			EExists,
-			/**
-			 * 是否相等
-			 */
 			EEquals,
-			/**
-			 * 是否包含
-			 */
 			EIncludes,
-			/**
-			 * 是否-开始
-			 */
 			EDashMatch,
-			/**
-			 * 是否前缀
-			 */
 			EPrefix,
-			/**
-			 * 是否后缀
-			 */
 			ESuffix,
-			/**
-			 * 是否子串
-			 */
 			ESubString,
 		} TOperator;
 
@@ -243,9 +194,7 @@ class CTextSelector: public CSelector
 	public:
 		typedef enum
 		{
-			//
 			EOwnContains,
-			//
 			EContains,
 		} TOperator;
 
